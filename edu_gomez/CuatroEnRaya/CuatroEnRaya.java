@@ -55,9 +55,9 @@ public class CuatroEnRaya{
             if(contFila!=4){
                 contFila=0;
             }
-            // if(contColu!=4){
-            //     contColu=0;
-            // }
+            if(contColu!=4){
+                contColu=0;
+            }
         }
         if(contFila==4 || contColu==4){
             res = true;
