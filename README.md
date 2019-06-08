@@ -2,7 +2,7 @@
 
 Para colaborar:
 * Pedidme ser colaborador del repositorio para poder añadir vuestros archivos(necesaria cuenta de github)
-* Arrastrar la carpeta que contiene los archivos a esta ventana.
+* Arrastrar la carpeta que contiene los archivos(una carpeta con tu nombre) a esta ventana.
 * Pulsar el botón verde que aparecerá abajo que dice _"commit changes"_
 
 
