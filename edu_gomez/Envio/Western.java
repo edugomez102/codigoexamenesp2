@@ -14,7 +14,7 @@ public class Western{
 	}
 	public double calculaImporte(){
 		double res;
-		res = cantidad*0,03;
+		res = cantidad*0.03;
 		return res;
 	}
 }
