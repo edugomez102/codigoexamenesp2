@@ -3,20 +3,6 @@ import java.io.*;
 
 public class Diferencias{
 
-	public static void impdif(String s0, String s1){
-		String mensaje0=s0,mensaje1=s1;
-		if(mensaje0!=null && mensaje1!= null &&
-			!mensaje0.equalsIgnoreCase(mensaje1)){
-			System.out.println("< "+mensaje0);
-			System.out.println("> "+mensaje1);
-		}
-		else if(mensaje0==null && mensaje1!=null){
-			System.out.println("> "+mensaje1);
-		}
-		else if(mensaje0!=null && mensaje1==null){
-			System.out.println("< "+mensaje0);
-		}
-	}
 	public static void main(String[] args){
 		boolean hayi = false;
 		String mensaje0=null;
