@@ -1,8 +1,9 @@
-public class Western{
+public class Western extends Envio{
 	private String mensaje;
 	private double cantidad;
 
 	public Western(String cad, double cant){
+		super(Envio.destinatario,Envio.remitente);
 		mensaje = "";
 		cantidad = 50;
 		if(cad != null && !cad.isEmpty()){

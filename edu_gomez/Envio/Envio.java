@@ -1,6 +1,6 @@
 public class Envio{
-	protected String destinatario;
-	protected String remitente;
+	protected static String destinatario;
+	protected static String remitente;
 
 	public Envio(String dest, String remi){
 		destinatario = dest;
@@ -9,10 +9,11 @@ public class Envio{
 	public double calculaImporte(){
 		double res;
 		if(this instanceof Paquete){
-			res = (Paquete)this.calculaImporte;
+			res = ((Paquete)this).calculaImporte();
 		}
 		else{
-			res = (Western)this.calculaImporte;
+			res = ((Western)this).calculaImporte();
 		}
+		return res;
 	}
 }

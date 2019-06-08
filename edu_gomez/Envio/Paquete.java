@@ -5,7 +5,7 @@ public class Paquete extends Envio{
 	private double peso;
 
 	public Paquete(int alto, int ancho, int largo, double peso){
-		super();
+		super(Envio.destinatario, Envio.remitente);
 		this.alto = 3;
 		this.ancho = 3;
 		this.largo = 3;
