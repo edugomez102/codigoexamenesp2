@@ -4,8 +4,7 @@ public class Paquete extends Envio{
 	private int largo;
 	private double peso;
 
-	public Paquete(int al,int anc,int larg,double pe){
-		super(Envio.destinatario,Envio.remitente);
+	public Envio(int al,int anc,int larg,double pe){
 		if(pe<100){
 			pe=100;
 		}
@@ -19,19 +18,13 @@ public class Paquete extends Envio{
 		}
 		ancho = anc;
 		if(larg<3){
-			larg = 3;
+			larg = 3
 		}
 		largo = 3;
 	}
 
-	public Override double calculaImporte(){
+	public double calculaImporte(){
 		return peso/(alto+ancho+largo);
 	}
-	public void toStrang(){
-		super.toStrang();
-		System.out.println("ALTO: " + alto + "\n");
-		System.out.println("ANCHO: " + ancho + "\n");
-		System.out.println("LARGO: " + largo + "\n");
-		System.out.println("PESO: " + peso + "\n");
-	}
+
 }

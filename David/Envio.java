@@ -1,6 +1,6 @@
-public abstract class Envio{
-	protected static String destinatario;
-	protected static String remitente;
+public class Envio{
+	protected String destinatario;
+	protected String remitente;
 
 	public Envio(String dest, String remi){
 		destinatario = dest;
@@ -8,10 +8,4 @@ public abstract class Envio{
 	}
 
 	public abstract double calculaImporte();
-
-	public void toStrang(){
-		System.out.println("DEST: " + destinatario + "\n");
-		System.out.println("REM: " + remitente + "\n");
-	}
 }
-

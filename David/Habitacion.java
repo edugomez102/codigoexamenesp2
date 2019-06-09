@@ -6,7 +6,7 @@ public class Habitacion{
 
 	public Habitacion(int n,boolean wc){
 		if(n<1){
-			n=1
+			n=1;
 		}
 		ocupantes = 0;
 		camas = n;
@@ -24,26 +24,26 @@ public class Habitacion{
 
 	public boolean sale(){
 		if(ocupantes>camas){
-			ocupantes--
+			ocupantes--;
 			return true;
 		}else{
 			return false;
 		}
 	}
 
-	public setCamas(int cam){
+	public void setCamas(int cam){
 		camas = cam;
 	}
 
-	public getCamas(){
+	public int getCamas(){
 		return camas;
 	}
 
-	public setAseo(boolean as){
+	public void setAseo(boolean as){
 		aseo = as;
 	}
 
-	public getAseo(){
+	public boolean getAseo(){
 		return aseo;
 	}
 
