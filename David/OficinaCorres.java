@@ -1,6 +1,6 @@
-public class OficinaCorreos{
+public class OficinaCorres{
 	private Envio [][] casillero;
-	public OficinaCorreos(int f,int c){
+	public OficinaCorres(int f,int c){
 		if(f<2){
 			f=2;
 		}
@@ -11,8 +11,8 @@ public class OficinaCorreos{
 	}
 
 	public boolean almacena(Envio env){
-		for(int i=0;i<casillero.lenght;i++){
-			for(int j=0;j<casillero[i].lenght;j++){
+		for(int i=0;i<casillero.length;i++){
+			for(int j=0;j<casillero[i].length;j++){
 				if(casillero[i][j]==null){
 					casillero[i][j] = env;
 					return true;
@@ -24,8 +24,8 @@ public class OficinaCorreos{
 
 	public double facturado(){
 		double res = 0;
-		for(int i=0;i<casillero.lenght;i++){
-			for(int j=0;j<casillero[i].lenght;j++){
+		for(int i=0;i<casillero.length;i++){
+			for(int j=0;j<casillero[i].length;j++){
 				res = res +casillero[i][j].calculaImporte();
 			}
 		}
@@ -34,24 +34,26 @@ public class OficinaCorreos{
 
 	public int westerns(){
 		int res = 0;
-		for(int i=0;i<casillero.lenght;i++){
-			for(int j=0;j<casillero[i].lenght;j++){
-				if(casillero[i][j].instanceof(Western)){
+		for(int i=0;i<casillero.length;i++){
+			for(int j=0;j<casillero[i].length;j++){
+				if(casillero[i][j] instanceof Western){
 					res++;
 				}
 			}
 		}
+		return res;
 	}	
 
 	public int paquetes(){
 		int res = 0;
-		for(int i=0;i<casillero.lenght;i++){
-			for(int j=0;j<casillero[i].lenght;j++){
-				if(casillero[i][j].instanceof(Paquete)){
+		for(int i=0;i<casillero.length;i++){
+			for(int j=0;j<casillero[i].length;j++){
+				if(casillero[i][j] instanceof Paquete){
 					res++;
 				}
 			}
 		}
+		return res;
 	}
 
 }

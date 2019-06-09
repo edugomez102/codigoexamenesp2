@@ -29,8 +29,8 @@ public class Hotel{
 	public boolean reforma(int i_estancia){
 		if(i_estancia>0){
 		if(estancias[i_estancia-1]!=null){
-			if(estancias[i_estancia-1].getCamas()==2 && estancias[i_estancia-1].getAseo()==true){
-				Suite x = new Suite(estancias[i_estancia-1].getCamas(),estancias[i_estancia-1].getAseo());
+			if(estancias[i_estancia-1].getCamas==2 && estancias[i_estancia-1].getAseo==true){
+				Suite x = new Suite(estancias[i_estancia-1].getCamas,estancias[i_estancia-1].getAseo);
 				estancias[i_estancia-1] = x;
 				return true;
 			}
@@ -42,7 +42,7 @@ public class Hotel{
 	public int getReformas(){
 		int contador = 0;
 		for(int i=0;i<estancias.length;i++){
-			if(estancias[i] instanceof Suite ){
+			if(estancias[i].instanceof(Suite)){
 				contador++;
 			}
 		}
@@ -52,7 +52,7 @@ public class Hotel{
 	public int getHabitaciones(){
 		int contador = 0;
 		for(int i=0;i<estancias.length;i++){
-			if(estancias[i] instanceof Habitacion){
+			if(estancias[i].instanceof(Habitacion)){
 				contador++;
 			}
 		}

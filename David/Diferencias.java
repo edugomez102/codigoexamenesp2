@@ -31,8 +31,8 @@ public class Diferencias{
 							System.out.println("< "+aux1);
 							System.out.println("> "+aux2);
 						}
-					}
-				}while(true &&(aux1!=null && aux2!=null))
+					}while(true &&(aux1!=null && aux2!=null));
+				}
 
 			}catch(IOException e){
 				e.printStackMessage();

@@ -3,6 +3,7 @@ public class Western extends Envio{
 	private double cantidad;
 
 	public Western(String mens,double cant){
+		super(Envio.destinatario,Envio.remitente);
 		if(cant<50){
 			cant = 50;
 		}
@@ -10,7 +11,14 @@ public class Western extends Envio{
 		mensaje = mens;
 	}
 
-	public double calculaImporte(){
+	public Override double calculaImporte(){
 		return cantidad*0.03;
 	}
+
+	public void toStrang(){
+		super.toStrang();
+		System.out.println("MENS: " + mensaje + "\n");
+		System.out.println("CANT " + cantidad + "\n");
+	}
+
 }
