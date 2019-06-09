@@ -41,12 +41,12 @@ public class Diferencias{
 			finally{
 				try{
 				if(fr1!=null && br1 !=null){
-					fr1.close();
 					br1.close();
+					fr1.close();
 				}
 				if(fr2!=null && br2 !=null){
-					fr2.close();
 					br2.close();
+					fr2.close();
 				}
 			}catch(IOException e){
 				e.printStackMessage();
