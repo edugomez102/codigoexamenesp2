@@ -12,18 +12,21 @@ public class Hotel{
 	}
 	public boolean aloja(int est){
 		boolean alojado = false;
+		est--;
 		if(est >= 0 && est < estancias.length)
 			alojado = estancias[est].entra();
 		return alojado;
 	}
 	public boolean desaloja(int est){
 		boolean desalojado = false;
+		est--;
 		if(est >= 0 && est < estancias.length)
 			desalojado = estancias[est].sale();
 		return desalojado;
 	}
 	public boolean reforma(int est){
 		boolean reformada = false;
+		est--;
 		if(est >= 0 && est < estancias.length){
 			if(!(estancias[est] instanceof Suite)){
 				estancias[est] = new Suite();
@@ -34,5 +37,5 @@ public class Hotel{
 		return reformada;
 	}
 	public int getReformas(){ return reformas; }
-	public int getHabitaciones(){ return estancias.length + 1 - reformas; }
+	public int getHabitaciones(){ return estancias.length - reformas; }
 }
